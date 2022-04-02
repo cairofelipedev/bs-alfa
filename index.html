@@ -2,19 +2,19 @@
 <html lang="pt-br">
 
 <head>
-  <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- Bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="style.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
   <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
   <link rel='stylesheet'
     href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css'>
-  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
-  <link rel="stylesheet" href="./style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
   <title>Alfa Hotel</title>
 </head>
 
@@ -49,26 +49,77 @@
     </div>
     <section class="container">
       <div class="row justify-content-center">
-        <div class="col-8">
-          <form class="row g-3 justify-content-center">
-            <div class="col-auto">
-              <label for="inputPassword2">Entrada / Check - in</label>
-              <div class="input-group date" id="datepicker-in">
-                <input type="text" class="form-control" id="date" />
-                <span class="input-group-append"></span>
+        <div class="col-10 section-search">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="section-search-text">
+                <div class="container">
+                  <h5 class="text-white">Faça já sua reserva</h5>
+                  <p class="text-white">
+                    Preencha os campos e clique
+                    em verificar disponibilidade
+                  </p>
+                </div>
               </div>
             </div>
-            <div class="col-auto">
-              <label for="inputPassword2">Saída / Check - out</label>
-              <div class="input-group date" id="datepicker-out">
-                <input type="text" class="form-control" id="date" />
-                <span class="input-group-append"></span>
+            <div class="col-md-8">
+              <div class="section-search-datapicker bg-white">
+                <div class="row">
+                  <form class="row justify-content-center">
+                    <div class="col-md-4">
+                      <label class="pb-2" for="inputCheckIn"><i class="bi bi-calendar-week"></i> Entrada / Check -
+                        in</label>
+                      <div class="input-group date" id="datepicker-in">
+                        <input type="text" class="form-control" id="date" />
+                        <span class="input-group-append"></span>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <label class="pb-2" for="inputCheckOut"><i class="bi bi-calendar-week"></i> Saída / Check -
+                        out</label>
+                      <div class="input-group date" id="datepicker-out">
+                        <input type="text" class="form-control" id="date" />
+                        <span class="input-group-append"></span>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="d-grid gap-2">
+                        <button type="submit" class="btn text-white">DISPONIBILIDADE</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
               </div>
             </div>
-            <div class="col-auto">
-              <button type="submit" class="btn btn-primary mb-3">Confirm identity</button>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="card">
+              <img src="img-1.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's
+                  content
+                </p>
+              </div>
             </div>
-          </form>
+          </div>
+          <div class="col-md-6">
+            <div class="card">
+              <img src="img-1.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's
+                  content.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -85,7 +136,13 @@
   <script
     src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js'></script>
   <script>
-    var swiper = new Swiper(".mySwiper", {});
+    var swiper = new Swiper(".mySwiper", {
+      loop: true,
+      autoplay: {
+        delay: 5000,
+        disableOnInteraction: false
+      },
+    });
     $('#datepicker-in').datepicker();
     $('#datepicker-out').datepicker();
   </script>

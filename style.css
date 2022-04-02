@@ -1,3 +1,6 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+}
 nav {
   border-top: 8px solid #BBD142;
 }
@@ -23,6 +26,72 @@ i {
   object-fit: cover;
 }
 
-.input-group-append {
-  cursor: pointer;
+.section-search {
+  position: relative;
+  bottom:60px;
+  z-index: 2;
+}
+
+.section-search .section-search-text {
+  background-color: #889D16;
+  padding:25px 0px 2px 0px;
+  border-radius:10px;
+  box-shadow: #707070 1px 5px 8px;
+}
+
+.section-search .section-search-text h5 {
+  font-weight: bold;
+}
+
+.section-search-datapicker {
+  padding:20px 0px 20px 20px;
+  border-radius:10px;
+  box-shadow: #707070 1px 5px 8px;
+}
+
+.section-search-datapicker label {
+  color:#707070;
+  font-size: 15px;
+  font-weight: lighter;
+}
+
+.section-search-datapicker .form-control {
+  border-radius: 5px!important;
+}
+.section-search-datapicker input[type=text]{
+  border-color: #707070;
+  height: 45px;
+}
+
+.section-search-datapicker .btn {
+  margin-top:35px;
+  background-color: #474843;
+  padding:12px 50px 12px 50px;
+  font-weight: bold;
+  font-size:12px;
+}
+
+.card {
+  color:white;
+}
+.card-body {
+  background-color: #889D16;
+}
+
+.card-title {
+  position: absolute;
+  bottom: 80px;
+}
+@media (min-width: 767px) {
+  .section-search-datapicker {
+    position: relative;
+    right: 50px;
+  }
+}
+
+@media (max-width: 767px) {
+  .section-search-datapicker {
+    position: relative;
+    bottom: 10px;
+  }
 }
