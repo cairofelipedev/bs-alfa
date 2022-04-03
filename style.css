@@ -1,5 +1,6 @@
 body {
   font-family: 'Open Sans', sans-serif;
+  background-color: #E9E8E8;
 }
 nav {
   border-top: 8px solid #BBD142;
@@ -161,6 +162,25 @@ i {
   background-color: #51AB57;
   border-radius: 40px;
 }
+
+.gallery {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+.gallery h1 {
+  color:#656565;
+  padding-bottom:70px;
+  font-weight: bold;
+}
+
+.gallery .btn {
+  margin-top:35px;
+  background-color: #474843;
+  padding:12px 50px 12px 50px;
+  font-weight: bold;
+  font-size:12px;
+}
+
 @media (min-width: 767px) {
   .section-search-datapicker {
     position: relative;
