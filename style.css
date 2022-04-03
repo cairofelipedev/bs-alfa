@@ -71,21 +71,104 @@ i {
   font-size:12px;
 }
 
-.card {
+.bedrooms .card {
   color:white;
-}
-.card-body {
-  background-color: #889D16;
+  border:transparent;
+  border-radius: 10px 10px 10px 10px;
+  box-shadow: #BFBFBF 1px 5px 8px;
+
 }
 
-.card-title {
+.bedrooms .card img {
+  border-radius:10px 10px 0px 0px;
+}
+
+.bedrooms .card-body {
+  background-color: #889D16;
+  border-radius: 0px 0px 10px 10px;
+}
+
+.bedrooms .card-body h5 {
+  font-size:38px;
+  font-weight: bold;
+}
+
+.bedrooms .card-text {
+  padding:0px 10px 0px 10px;
+}
+
+.services .card {
+  color:#707070;
+  margin-top:40px;
+  border:transparent;
+  border-radius: 10px 10px 10px 10px;
+  box-shadow: #BFBFBF 1px 5px 8px;
+}
+
+.services .card img {
+  border-radius:10px 10px 0px 0px;
+  height: 250px;
+}
+.services .card-body {
+  height: 100px;
+}
+
+.prices .prices-banner {
+  background-image: url("banner-2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 400px;
+  width: 100%;
   position: absolute;
-  bottom: 80px;
+}
+
+.prices h1 {
+  font-weight: bold;
+}
+
+.prices .prices-container {
+  padding-top: 100px;
+}
+
+.prices .card {
+  border:transparent;
+  box-shadow: #BFBFBF 1px 5px 8px;
+}
+.prices .card-body {
+  margin-top: 40px;
+  padding-top: 40px;
+  background-color: #656565;
+}
+
+.prices .card-body h5 {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.prices .card-body h4 {
+  font-weight: bold;
+}
+
+.prices .card-footer {
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+.prices .card-footer p {
+  line-height: 0.5;
+  color:#656565;
+}
+.prices .btn {
+  background-color: #51AB57;
+  border-radius: 40px;
 }
 @media (min-width: 767px) {
   .section-search-datapicker {
     position: relative;
     right: 50px;
+  }
+  .bedrooms .card-body h5 {
+    position: absolute;
+    bottom: 160px;
   }
 }
 
@@ -93,5 +176,9 @@ i {
   .section-search-datapicker {
     position: relative;
     bottom: 10px;
+  }
+  .bedrooms .card-body h5 {
+    position: absolute;
+    bottom: 280px;
   }
 }
